@@ -1,0 +1,1 @@
+{"version":3,"file":"property-decorator.js","sourceRoot":"","sources":["property-decorator.ts"],"names":[],"mappings":";;AAAA,SAAgB,QAAQ,CAAC,KAAa;IAClC,OAAO,UAAS,MAAU,EAAC,QAAe;QACtC,MAAM,UAAU,GAAoB;YAChC,QAAQ,EAAC,KAAK;SACjB,CAAA;QACD,OAAO,UAAU,CAAC;IACtB,CAAC,CAAA;AACL,CAAC;AAPD,4BAOC"}
