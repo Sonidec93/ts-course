@@ -8,11 +8,11 @@ let b: [string, number];
 b = ['mukul', 26];
 console.log(b);
 
-interface MyInterface {
-    data(a: number, b: number): void;
+// interface MyInterface {
+//     data(a: number, b: number): void;
 
-}
-let obj: MyInterface;
+// }
+// let obj: MyInterface;
 enum Color {
     grey = 10,
     black,
@@ -44,11 +44,13 @@ console.log(username, age);
 function acceptRest(...data: [string, number]) {
     return data;
 }
-interface OptionalMethod {
-    validation?(flag: any): boolean|string;
+interface OptionalMethod <T extends string|boolean>{
+   validation?(flag:T):T
 }
 
-let g: OptionalMethod = { validation() { return 'true' } };
+let g: OptionalMethod<string> = { validation(flag:string) { return 'true' } };
+// let g:Partial<OptionalMethod<string>>={}
+
 
 obj1.username = 'mahesh';
 console.log(acceptRest("Mukul", 10));

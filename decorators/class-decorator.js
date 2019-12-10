@@ -48,7 +48,7 @@ __decorate([
     property_decorator_1.writable(true)
 ], Student.prototype, "name", void 0);
 __decorate([
-    method_decorator_1.editable(true)
+    method_decorator_1.editable(false)
 ], Student.prototype, "display", null);
 Student = __decorate([
     logging(true),
@@ -62,4 +62,6 @@ student.display = function () {
     console.log('changed the function');
 };
 student.display();
+const arr = ['mukul', 'soni'];
+// arr.push('ff');arr.pop();//doesn't work  when type is made as Readonly
 //# sourceMappingURL=class-decorator.js.map

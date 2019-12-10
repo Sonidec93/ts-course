@@ -21,4 +21,3 @@
 
 let obj2=SingletonExample.getInstance();
 obj2.logData();
-    

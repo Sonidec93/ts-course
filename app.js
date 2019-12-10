@@ -4,7 +4,10 @@ console.log(a);
 let b;
 b = ['mukul', 26];
 console.log(b);
-let obj;
+// interface MyInterface {
+//     data(a: number, b: number): void;
+// }
+// let obj: MyInterface;
 var Color;
 (function (Color) {
     Color[Color["grey"] = 10] = "grey";
@@ -31,6 +34,8 @@ console.log(username, age);
 function acceptRest(...data) {
     return data;
 }
+let g = { validation(flag) { return 'true'; } };
+// let g:Partial<OptionalMethod<string>>={}
 obj1.username = 'mahesh';
 console.log(acceptRest("Mukul", 10));
 let tuple;

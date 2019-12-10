@@ -9,7 +9,7 @@ function logged(constructorfn: Function) {
 
 @logging(false)
 class MyClass {
-    constructor() {
+    constructor(    ) {
         console.log('MyClass constructor');
     }
 }
@@ -36,7 +36,7 @@ class Student {
         this.name=name;
         this.age=age;
     }
-    @editable(true)
+    @editable(false)
     display(){
         console.log(this.age,this.name);
     }
@@ -52,3 +52,7 @@ student.display=function(){
     console.log('changed the function')
 }
 student.display();
+
+const arr:Readonly<string[]>=['mukul','soni'];
+// arr.push('ff');arr.pop();//doesn't work  when type is made as Readonly
+

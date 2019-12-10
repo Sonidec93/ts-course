@@ -11,21 +11,33 @@
 </head>
 
 <body>
-    Hello Mukul Kumra
-</body>
-<script>
-    SystemJS.config({
-        map: {
-            'jquery': 'node_modules/jquery/dist/jquery.min.js'
-        },
-        baseURL: '/',
-        packages: {
-            '/': {
-                defaultExtension: 'js'  
+    <div id="app"></div>
+    <form>
+        <div>
+            <label for="courseName">Course</label>
+            <input type="text" name="course" />
+        </div>
+        <div>
+            <label for="price">Price</label>
+            <input type="text" name="price" />
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        SystemJS.config({
+            map: {
+                'jquery': 'node_modules/jquery/dist/jquery.min.js'
+            },
+            baseURL: '/',
+            packages: {
+                '/': {
+                    defaultExtension: 'js'
+                }
             }
-        }
-    });
-    SystemJS.import('app');
-</script>
+        });
+        SystemJS.import('class-decorator-template');
+    </script>
+</body>
 
 </html>

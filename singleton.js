@@ -5,7 +5,8 @@ class SingletonExample {
         if (!SingletonExample.instance) {
             SingletonExample.instance = new SingletonExample();
         }
-        return SingletonExample.instance;
+        //in static method this refer to the class itself using this we can access class variables
+        return this.instance;
     }
     logData() {
         console.log('Singleton class');
